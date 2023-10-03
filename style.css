@@ -1,0 +1,230 @@
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+    --color-1:#0061f2;
+    --color-2:#0052ce;
+    --color-3: #8c2bcc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #69707a;
+    background-color: #f2f6fc;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(33,40,50);
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    gap: 40px;
+}
+nav > ul{
+    display: flex;
+    gap: 20px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+li{
+    list-style: none;
+}
+li a{
+    color: rgba(0, 0, 0, 0.55);
+}
+li a:hover{
+    color: var(--color-black);
+    transition: all .2s;
+    cursor: pointer;
+}
+button{
+    background-color:var(--color-1);
+    color: var(--color-white);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: var(--color-2);
+    transition: all .2s;
+    cursor: pointer;
+}
+button i{
+    margin-left: 5px;
+    font-size: 12px;
+}
+.page-content{
+    width: 100vw;
+    height: 700px;
+    background-color: var(--color-3);
+    background-image: url(pattern-shapes.png);
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+}
+.page-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.page-content-left{
+    display: flex;
+    flex-direction: column;
+}
+.page-content-left button{
+    color: var(--color-3);
+    background-color: var(--color-white);
+    padding: 5px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 100px;
+    margin-top: 15em;
+    margin-bottom: 1em;
+}
+.page-content-left h1{
+    color: var(--color-white);
+    font-size: 2.5em;
+    width: 100%;
+    max-width: 700px;
+}
+.page-content-left p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.15rem;
+    width: 100%;
+    max-width: 600px;
+}
+.page-content-right{
+    background-color: var(--color-white);
+    border-radius: 10px;
+    width: 700px;
+    height: 400px;
+    margin-top: 7em;
+}
+.login-div-head{
+    padding: 20px;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.login-div-head p{
+    color: var(--color-1);
+    font-weight: 500;
+}
+.login-div-body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.input-class{
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* width: 100%; */
+    width: 300px;
+}
+.labin{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+.icon-1{
+    background-color: #ddbdf3db;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+.icon-1 i{
+    color: var(--color-3);
+    font-size: 22px;
+}
+.icon-2{
+    background-color: rgba(195, 241, 195, 0.951);
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+.icon-2 i{
+    color: rgba(23, 172, 23, 0.933);
+    font-size: 22px;
+}
+.icon-3{
+    background-color: rgb(188, 226, 238);
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+.icon-3 i{
+    color: rgba(11, 11, 101, 0.934);
+    font-size: 22px;
+}
+.icon-4{
+    background-color: rgb(243, 180, 157);
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+.icon-4 i{
+    color: orangered;
+    font-size: 22px;
+}
+.box h5{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
